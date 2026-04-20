@@ -1,12 +1,17 @@
-name: custom-greetings
+name: custom-greeting-nodejs
+
 on:
   push:
     branches: [Himel]
 
 jobs:
-  greetings:
-    name: custom-greetings
+  nodesjsApply:
+    name: test nodejs
     runs-on: ubuntu-latest
     steps:
-      - name: First step
-        run: echo "hello world"
+      - name: check nodejs
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '18'
+      - run: npm install
+
