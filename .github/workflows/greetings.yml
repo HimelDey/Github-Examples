@@ -1,0 +1,16 @@
+name: greetings test
+
+on:
+  push
+branch:
+  Himel
+
+jobs:
+  -name: greetings
+  runs-on: ubuntu-latest
+  steps:
+    -name: hello world
+    run: echo "Hello world, This is himel"
+
+
+
