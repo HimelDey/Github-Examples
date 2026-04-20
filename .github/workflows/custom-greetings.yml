@@ -1,0 +1,12 @@
+name: custom-greetings
+on:
+  push:
+    branches: [Himel]
+
+Jobs:
+  greetings:
+    name: custom-greetings
+    runs-on: ubuntu-latest
+  steps:
+    - name: First step
+      run: echo "hello world"
