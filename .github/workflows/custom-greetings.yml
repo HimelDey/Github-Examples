@@ -3,7 +3,7 @@ on:
   push:
     branches: [Himel]
 
-Jobs:
+jobs:
   greetings:
     name: custom-greetings
     runs-on: ubuntu-latest
