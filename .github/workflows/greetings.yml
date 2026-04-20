@@ -2,7 +2,7 @@ name: greetings test
 
 on:
   push:
-  branch: Himel
+  branches: ["Himel"]
 
 jobs:
   -name: greetings
