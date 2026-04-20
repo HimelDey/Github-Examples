@@ -7,6 +7,6 @@ jobs:
   greetings:
     name: custom-greetings
     runs-on: ubuntu-latest
-  steps:
-    - name: First step
-      run: echo "hello world"
+    steps:
+      - name: First step
+        run: echo "hello world"
