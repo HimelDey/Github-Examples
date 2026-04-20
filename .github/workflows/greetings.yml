@@ -1,9 +1,8 @@
 name: greetings test
 
 on:
-  push
-branch:
-  Himel
+  push:
+  branch: Himel
 
 jobs:
   -name: greetings
