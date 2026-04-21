@@ -12,6 +12,8 @@ jobs:
         node-version: ['18.x', '20.x']
     name: Node js CI
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Node Js Install
         uses: actions/setup-node@v6
         with:
