@@ -5,8 +5,8 @@ on:
     branches: ["Himel"]
 
 jobs:
-  name: Node js CI
   runs-on: ubuntu-latest
+  name: Node js CI
   steps:
     - name: Node Js Install
       uses: actions/setup-node@v6
