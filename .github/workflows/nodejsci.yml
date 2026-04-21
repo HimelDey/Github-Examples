@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: Himel
       - name: Node Js Install
         uses: actions/setup-node@v6
         with:
@@ -26,7 +28,7 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
 
-      
+
 
 
 
