@@ -6,13 +6,15 @@ on:
 
 jobs:
   NodeJsCI:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['18.x', '20.x']
     name: Node js CI
     steps:
       - name: Node Js Install
         uses: actions/setup-node@v6
         with:
-          node-version: '18'
+          node-version: ${{matrix.node-version}}
       
       - name: check node version
         run: node -v
