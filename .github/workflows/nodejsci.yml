@@ -16,5 +16,12 @@ jobs:
       
       - name: check node version
         run: node -v
+  
+  ubuntuNodeVersionCheck:
+    runs-on: ubuntu-latest
+    name: ubuntu version check
+    steps:
+      - name: just check version
+        run: npm -v
 
 
