@@ -5,15 +5,16 @@ on:
     branches: ["Himel"]
 
 jobs:
-  runs-on: ubuntu-latest
-  name: Node js CI
-  steps:
-    - name: Node Js Install
-      uses: actions/setup-node@v6
-      with:
-        node-version: '18'
-    
-    - name: check node version
-      run: node -v
+  NodeJsCI:
+    runs-on: ubuntu-latest
+    name: Node js CI
+    steps:
+      - name: Node Js Install
+        uses: actions/setup-node@v6
+        with:
+          node-version: '18'
+      
+      - name: check node version
+        run: node -v
 
 
